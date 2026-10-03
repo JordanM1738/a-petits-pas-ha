@@ -1,0 +1,12 @@
+[
+  {
+    "personId": 1000001,
+    "clientId": 5000,
+    "clientName": "CPE Exemple",
+    "personName": null,
+    "userData": {
+      "linkedPersons": "ENFANT EXEMPLE",
+      "photoUrl": "https://serviceapp.amisgest.ca/8_2/api/Photo/getPhotoPerson?id=1000001&size=Large&guid=LetterE"
+    }
+  }
+]

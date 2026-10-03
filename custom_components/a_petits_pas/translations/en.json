@@ -1,0 +1,97 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Sign in to Journal à petits pas",
+        "description": "Enter the credentials you use to sign in on app.journalapetitspas.ca.",
+        "data": {
+          "username": "Email",
+          "password": "Password"
+        }
+      },
+      "confirm": {
+        "title": "Children found",
+        "description": "The following children will be added: {children}"
+      },
+      "reauth_confirm": {
+        "title": "Reauthentication required",
+        "description": "Please confirm the password for {username} again.",
+        "data": {
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid email or password.",
+      "cannot_connect": "Could not reach the Amisgest service.",
+      "no_children": "No child is linked to this account.",
+      "unknown": "Unexpected error."
+    },
+    "abort": {
+      "already_configured": "This account is already configured.",
+      "reauth_successful": "Reauthentication successful."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Options",
+        "data": {
+          "scan_interval": "Refresh interval (minutes)",
+          "save_photos_locally": "Save journal photos locally"
+        },
+        "data_description": {
+          "save_photos_locally": "Saves photos under www/a_petits_pas (served without authentication via /local/). Disabling this only stops local caching -- today's photo stays available through the image entity, served authenticated by Home Assistant."
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "latest_logbook_entry": {
+        "name": "Latest logbook entry"
+      },
+      "activity_meal": {
+        "name": "Latest meal"
+      },
+      "activity_nap": {
+        "name": "Latest nap"
+      },
+      "activity_diaper": {
+        "name": "Latest diaper change"
+      },
+      "activity_bottle": {
+        "name": "Latest bottle"
+      },
+      "activity_writer": {
+        "name": "Written by"
+      },
+      "activity_info": {
+        "name": "Latest information"
+      },
+      "presence_today": {
+        "name": "Presence today",
+        "state": {
+          "p": "Present",
+          "a": "Absent",
+          "dp": "Departed",
+          "expected": "Expected",
+          "not_expected": "Not expected"
+        }
+      }
+    },
+    "binary_sensor": {
+      "new_logbook_entry": {
+        "name": "New logbook entry"
+      }
+    },
+    "image": {
+      "profile_photo": {
+        "name": "Profile photo"
+      },
+      "journal_photo": {
+        "name": "Journal photo"
+      }
+    }
+  }
+}

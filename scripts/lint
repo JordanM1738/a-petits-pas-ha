@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Mirrors what CI runs, for a quick local check before pushing.
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+echo "== ruff check =="
+ruff check .
+
+echo "== ruff format --check =="
+ruff format --check .
+
+echo "== mypy =="
+mypy custom_components/a_petits_pas
+
+echo "== pytest =="
+pytest tests/

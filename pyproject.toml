@@ -1,0 +1,23 @@
+[project]
+name = "ha-a-petits-pas"
+version = "0.1.0"
+description = "Home Assistant integration for Journal à petits pas (Amisgest) daycare journals"
+requires-python = ">=3.13"
+
+[tool.ruff]
+target-version = "py313"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.13"
+ignore_missing_imports = true
+disallow_untyped_defs = false
+warn_unused_ignores = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"

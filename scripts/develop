@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# Boot a real local Home Assistant instance with this integration loaded,
+# for manual end-to-end testing of the config flow / entities.
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+CONFIG_DIR="config"
+
+mkdir -p "$CONFIG_DIR/custom_components"
+ln -sfn "$(pwd)/custom_components/a_petits_pas" "$CONFIG_DIR/custom_components/a_petits_pas"
+
+if [ ! -f "$CONFIG_DIR/configuration.yaml" ]; then
+  cat > "$CONFIG_DIR/configuration.yaml" <<'EOF'
+default_config:
+
+logger:
+  default: info
+  logs:
+    custom_components.a_petits_pas: debug
+EOF
+fi
+
+exec hass -c "$CONFIG_DIR"

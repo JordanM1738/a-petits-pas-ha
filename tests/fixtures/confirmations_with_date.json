@@ -1,0 +1,19 @@
+[
+  {
+    "id": "fake-guid-0001",
+    "genre": "F",
+    "prenom": "ENFANT",
+    "nom": "EXEMPLE",
+    "code_ph": "EXPECTED",
+    "code_h": "",
+    "installation": "Installation Exemple",
+    "installationId": 100001,
+    "serviceId": 0,
+    "response": null,
+    "configured": true,
+    "answer_required": true,
+    "note_employe": null,
+    "personId": 1000001,
+    "description": null
+  }
+]

@@ -1,0 +1,97 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connexion à Journal à petits pas",
+        "description": "Entre les identifiants que tu utilises pour te connecter sur app.journalapetitspas.ca.",
+        "data": {
+          "username": "Courriel",
+          "password": "Mot de passe"
+        }
+      },
+      "confirm": {
+        "title": "Enfants trouvés",
+        "description": "Les enfants suivants seront ajoutés : {children}"
+      },
+      "reauth_confirm": {
+        "title": "Reconnexion requise",
+        "description": "Le mot de passe pour {username} doit être confirmé à nouveau.",
+        "data": {
+          "password": "Mot de passe"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Courriel ou mot de passe invalide.",
+      "cannot_connect": "Impossible de joindre le service Amisgest.",
+      "no_children": "Aucun enfant n'est lié à ce compte.",
+      "unknown": "Erreur inattendue."
+    },
+    "abort": {
+      "already_configured": "Ce compte est déjà configuré.",
+      "reauth_successful": "Reconnexion réussie."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Options",
+        "data": {
+          "scan_interval": "Intervalle de rafraîchissement (minutes)",
+          "save_photos_locally": "Sauvegarder les photos du journal localement"
+        },
+        "data_description": {
+          "save_photos_locally": "Enregistre les photos dans www/a_petits_pas (accessible sans authentification via /local/). Désactive uniquement la sauvegarde locale -- la photo du jour reste disponible via l'entité image, servie de façon authentifiée par Home Assistant."
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "latest_logbook_entry": {
+        "name": "Dernier journal de bord"
+      },
+      "activity_meal": {
+        "name": "Dernier repas"
+      },
+      "activity_nap": {
+        "name": "Dernière sieste"
+      },
+      "activity_diaper": {
+        "name": "Dernière couche"
+      },
+      "activity_bottle": {
+        "name": "Dernier biberon"
+      },
+      "activity_writer": {
+        "name": "Rédigé par"
+      },
+      "activity_info": {
+        "name": "Dernières informations"
+      },
+      "presence_today": {
+        "state": {
+          "p": "Présent",
+          "a": "Absent",
+          "dp": "A quitté",
+          "expected": "Attendu",
+          "not_expected": "Non attendu"
+        },
+        "name": "Présence aujourd'hui"
+      }
+    },
+    "binary_sensor": {
+      "new_logbook_entry": {
+        "name": "Nouveau journal de bord"
+      }
+    },
+    "image": {
+      "profile_photo": {
+        "name": "Photo de profil"
+      },
+      "journal_photo": {
+        "name": "Photo du journal"
+      }
+    }
+  }
+}
