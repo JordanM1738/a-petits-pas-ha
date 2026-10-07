@@ -1,0 +1,12 @@
+{
+  "domain": "a_petits_pas",
+  "name": "Journal à petits pas",
+  "codeowners": ["@JordanM1738"],
+  "config_flow": true,
+  "documentation": "https://github.com/JordanM1738/a-petits-pas-ha",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/JordanM1738/a-petits-pas-ha/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}

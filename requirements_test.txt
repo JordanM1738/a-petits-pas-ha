@@ -1,0 +1,12 @@
+# Test/dev dependencies. pytest-homeassistant-custom-component pulls in a
+# matching homeassistant core release automatically -- bump this alongside
+# hacs.json's "homeassistant" minimum version when updating.
+# NOTE: versions above 0.13.316 require Python 3.14 (current HA core has
+# moved to 3.14); pinned to the last 3.13-compatible release since that's
+# what this project's dev environment targets today. Bump both together
+# when moving to Python 3.14.
+pytest-homeassistant-custom-component==0.13.316
+pytest>=8.0
+pytest-asyncio>=0.24
+ruff>=0.6
+mypy>=1.11

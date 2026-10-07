@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "activity_type_id": 3,
+    "comment": "A mangé des pâtes avec des légumes",
+    "start": null,
+    "end": null,
+    "numeric_value": 1,
+    "logbook_entry_id": 900001,
+    "writer_person_id": 800001
+  },
+  {
+    "id": 2,
+    "activity_type_id": 1,
+    "comment": "",
+    "start": "2026-09-14T12:30:00.000-04:00",
+    "end": "2026-09-14T14:00:00.000-04:00",
+    "numeric_value": 1,
+    "logbook_entry_id": 900001,
+    "writer_person_id": 800001
+  },
+  {
+    "id": 3,
+    "activity_type_id": 2,
+    "comment": "A fait ses pipis dans la toilette",
+    "start": null,
+    "end": null,
+    "numeric_value": 1,
+    "logbook_entry_id": 900001,
+    "writer_person_id": 800001
+  }
+]
